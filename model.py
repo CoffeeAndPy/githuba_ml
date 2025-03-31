@@ -63,6 +63,12 @@ X_test = X[N:] # last 10 examples (20% of data)
 y_test = y[N:]
 
 
+X_train = X[:N].reshape(-1, 1)  # 2D
+y_train = y[:N].reshape(-1, 1)
+
+X_test = X[N:].reshape(-1, 1)  # 2D
+y_test = y[N:].reshape(-1, 1)
+
 # Take a single example of X
 input_shape = X[0].shape 
 
